@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Something little for you grom my side my baby🥺💐</title>.gallery {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  padding: 10px;
+  scroll-snap-type: x mandatory;
+}
+
+.gallery img {
+  width: 85%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 20px;
+  flex-shrink: 0;
+  scroll-snap-align: center;
+}
+
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Georgia,serif;background:linear-gradient(135deg,#fff0f5,#ffe4ec);color:#5a3040;text-align:center;min-height:100vh;overflow-x:hidden}
+.card{max-width:720px;margin:40px auto;padding:35px 22px;background:#ffffffdd;border-radius:28px;box-shadow:0 12px 40px #8b526333}
+h1{font-size:42px;margin:10px}.sub{font-family:Arial,sans-serif;font-size:17px}
+button{border:0;border-radius:25px;padding:13px 23px;margin:10px;background:#8b5263;color:white;font-size:16px;cursor:pointer}
+.hidden{display:none}.letter{font-size:19px;line-height:1.7;text-align:left;padding:15px}
+.flowers{font-size:55px;letter-spacing:8px;margin:20px}
+.photo{width:100%;max-height:420px;object-fit:cover;border-radius:20px;margin-top:15px}
+.small{font-family:Arial,sans-serif;font-size:13px;color:#8a6470}
+.gallery {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  padding: 10px;
+}
+
+.gallery img {
+  width: 180px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 15px;
+  flex-shrink: 0;
+}
+</style>
+</head>
+<body>
+<div class="card">
+<div class="flowers">🌷 🌸 🌹</div>
+<h1>HAPPY BIRTHDAY , MY LOVE ❤️💗</h1>
+<p class="sub">I made a tiny little world for you...</p>
+<button onclick="show('start')">Open me 👀💋🎁</button>
+
+<div id="start" class="hidden">
+<h2>Before anything else...</h2>
+<p class="letter">Happy Birthday PRASHUK ❤️✨<br><br>
+I just wanted to wish you in a way that would have made you feel what you are to me. i have made thsi with so much love and i really wish i could see your face with that bright smile that will come when you will open thsi slowly and discover piece by piece. I really wish baby that i could wish you by hugging you and kissing you but it's okay, I am still hugging you from here and you just have to feel it and forget to hug me back 🥺. This is a small gift from my side for my one and only baby made with my love for you which is just endless💋🤌  .</p>
+<button onclick="show('letter')"> wait wait there is one more letter for you 👀💌</button>
+</div>
+
+<div id="letter" class="hidden">
+<h2>A little letter for you 💌</h2>
+<p class="letter">
+You know what , I am getting really emotional and nervous too cuz i dont know whether you will like it or not. Anyways👉👈
+So starting from the start, I met you for the first time on 1st March,2025 from where i started knowing you, we had talked before too but on this very date you came into my life like a sunshine. I remember your first text, lemme quote it for you, "Hey main mute kaise hogya😭", and from here our this beautiful journey of love started. We were first friends then became more than just friends then something in between which we didn't name though and finally we became couples and lovers❤️. Baby I really love you so much, even i don't know how much. I just know that, the day you will leave me will be the day when I will lose my faith from love. I know I do some mistakes and hurt you unintentionally and for all of that I m really really sorry baby. You really mean so much to me, your smile, your face , your voice, your talks and you, everythung just makes me love you even more. Whenever I see you I just feel myself to be so lucky to have you in my life, to have someone who loves me so much and can do anything for my happiness. I just pray to god that we will always stay like this and love eachother even more. I just want you to be happy always, never let that shining smile go away from your face. I wish you get everything that you want and may the god always bless you my baby with so much love. May you get countless reasons to smile that your cheeks will start hurting. You are the most handsome, amazing , awesome , loving, caring, sweet, cute and the best boyfriend of the entire world and I am so much lucky to have you my cutie baby. I miss you alot and I am sending a lots of love, kisses and hugs to you sweetheart❤️.  </p>
+<button onclick="show('memories')">Our memories 📸</button>
+</div>
+
+<div id="memories" class="hidden">
+<h2>Our little memories 🌸</h2>
+<p class="sub">Replace the image below with one of your favourite photos.</p>
+<div class="gallery">
+  <img src="./photo1.jpg" alt="Memory 1">
+  <img src="./photo2.jpg" alt="Memory 2">
+  <img src="./photo3.jpg" alt="Memory 3">
+  <img src="./photo4.jpg" alt="Memory 4">
+</div>
+    <button onclick="show('end')">Final surprise 🌷</button>
+
+</div>
+
+
+<div id="end" class="hidden">
+<h2>And finally... 💋❤️</h2>
+<p class="letter">
+No matter how many efforts I put here, they still wouldn't be enough to say how much you mean to me and how much I really love you 🥺🤌.<br><br>
+PRASHUK I wish you a very very ✨ HAPPY AND FANTASTIC BIRTHDAY ✨. Keep smiling and be happy always. May you get everything that you want in your life. Thank you for always loving me this much and being an unforgettable part of my life my baby.
+I LOVE YOU SOOOOOOOOOOOOOOOOOOOOOO MUCHHHHHHHHHHHHHHHHHHHHHHHHH💋💋✨<br><br>
+<strong>Happy Birthday baby! 🎂💗</strong>
+</p>
+<div class="flowers">💐🌷🌹🌸💐</div>
+</div>
+
+
+</div>
+<script>
+function show(id){
+  document.querySelectorAll('[id]').forEach(x=>{if(x.id!=='start'&&x.id!=='letter'&&x.id!=='memories'&&x.id!=='song'&&x.id!=='end')return});
+  document.getElementById(id).classList.remove('hidden');
+  document.getElementById(id).scrollIntoView({behavior:'smooth'});
+}
+</script>
+</body>
+</html>
